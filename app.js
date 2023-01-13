@@ -5,6 +5,7 @@ let testObject = {
   value: "This is a test object",
 };
 
+// Here I am showcasing the syntax needed to add a timestamp to your function when its running on a continuous timer.
 const timeDelay = () => {
   setTimeout(() => {
     let timestamp = new Date().toLocaleString();
@@ -14,6 +15,7 @@ const timeDelay = () => {
   }, 3000);
 };
 
+// I used an asynchronous function here to ahow the utility of this particular function. I like to use it for api calls and routes, or any other fully automated function process.
 const errorTest = async () => {
   try {
     console.log("errorTest has been called");
@@ -23,6 +25,7 @@ const errorTest = async () => {
   }
 };
 
+// This function is used to log objects to the objectLog.js file and makes use of the Console, fs, and util modules that are natively available in Node.js
 const objectTest = (object) => {
   console.log("objectTest has been called");
   objectLogger.log(
