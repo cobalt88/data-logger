@@ -5,7 +5,7 @@ let testObject = {
   value: "This is a test object",
 };
 
-// Here I am showcasing the syntax needed to add a timestamp to your function when its running on a continuous timer.
+// Here I am showcasing the syntax needed to add a timestamp to your function when its running in a functions that is on a continuous timer.
 const timeDelay = () => {
   setTimeout(() => {
     let timestamp = new Date().toLocaleString();
@@ -29,7 +29,10 @@ const errorTest = async () => {
 const objectTest = (object) => {
   console.log("objectTest has been called");
   objectLogger.log(
-    `let object = ${util.inspect(object, { showHidden: false, depth: null })}`
+    `let loggedObject = ${util.inspect(object, {
+      showHidden: false,
+      depth: null,
+    })}`
   );
 };
 
