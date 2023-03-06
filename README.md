@@ -7,4 +7,4 @@ The best part is you don't even need to install any dependencies. Everything use
 
 In all reality the only thing you need from this code base to make it work is the logger.js file. Everything else is just there to show how it can be used. 
 
-The short of it is you use the build fs and Console modules to save your console.log's to a file. And there are a few ways of doing this. 
+All this does is use the FS and Console modules to save your console.log's to a file. And there are a few ways of doing this. 
